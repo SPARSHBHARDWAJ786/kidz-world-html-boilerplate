@@ -1,0 +1,149 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+nav {
+    background-color: #202020;
+    padding: 10px 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header-text h5 {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.container div {
+    margin: 10px;
+}
+
+.books, .games, .crafts {
+    width: 100px;
+    height: auto;
+}
+
+.buy {
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #202020;
+    padding: 20px;
+}
+
+footer img {
+    height: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .header-text h5 {
+        font-size: 14px;
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+
+    .container div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav img, .header img, .buy img {
+        width: 20px;
+    }
+
+    #cart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cart p {
+        margin: 0;
+        padding: 5px 0 0 0;
+    }
+
+    .header .search-bar input {
+        width: 80%;
+    }
+
+    .header .search-bar button {
+        padding: 8px 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .books, .games, .crafts {
+        width: 100%;
+    }
+
+    .buy {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buy p {
+        margin-bottom: 5px;
+    }
+}
